@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clinique — Témoignages</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#0076d6;
+      --muted:#6b7280;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef4fb);color:#111827;}
+
+    .testimonials-section{max-width:1100px;margin:48px auto;padding:28px;}
+    .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .header h2{font-size:1.6rem;margin:0}
+    .header p{margin:0;color:var(--muted)}
+
+    .carousel{position:relative;background:transparent;padding:18px;border-radius:18px}
+    .track{display:flex;gap:18px;transition:transform 400ms cubic-bezier(.2,.9,.2,1);}
+
+    .card{
+      min-width:300px;flex:0 0 320px;background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 6px 20px rgba(16,24,40,0.08);display:flex;flex-direction:column;gap:12px;
+    }
+
+    .quote{font-size:0.98rem;line-height:1.45;color:#111827}
+    .meta{display:flex;align-items:center;gap:12px;margin-top:auto}
+    .avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#e6f2ff,#fff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .person{display:flex;flex-direction:column}
+    .name{font-weight:600}
+    .role{font-size:0.85rem;color:var(--muted)}
+
+    .controls{position:absolute;left:12px;right:12px;top:50%;transform:translateY(-50%);display:flex;justify-content:space-between;pointer-events:none}
+    .btn{pointer-events:auto;border:0;background:var(--card);width:40px;height:40px;border-radius:10px;display:inline-grid;place-items:center;box-shadow:0 6px 14px rgba(16,24,40,0.08);cursor:pointer}
+    .btn:focus{outline:2px solid rgba(0,118,214,0.12)}
+
+    .dots{display:flex;gap:8px;justify-content:center;margin-top:16px}
+    .dot{width:10px;height:10px;border-radius:10px;background:#d1d5db}
+    .dot.active{background:var(--accent)}
+
+    /* Responsive */
+    @media (max-width:880px){.testimonials-section{padding:16px}.card{min-width:260px;flex:0 0 280px}}
+    @media (max-width:480px){.header{flex-direction:column;align-items:flex-start;gap:8px}.track{gap:12px}.card{padding:16px}}
+  </style>
+</head>
+<body>
+  <section class="testimonials-section" aria-labelledby="testimonials-title">
+    <div class="header">
+      <div>
+        <h2 id="testimonials-title">Ils nous font confiance</h2>
+        <p>Retours de patients soignés et accompagnés par notre équipe.</p>
+      </div>
+      <div aria-hidden="true">⭐️ 4.8/5 — Plus de 2 000 avis</div>
+    </div>
+
+    <div class="carousel" aria-roledescription="carousel">
+      <div class="controls">
+        <button class="btn" id="prevBtn" aria-label="Précédent">◀</button>
+        <button class="btn" id="nextBtn" aria-label="Suivant">▶</button>
+      </div>
+
+      <div id="trackWrapper" style="overflow:hidden">
+        <div class="track" id="track">
+
+          <article class="card" aria-label="Témoignage 1">
+            <p class="quote">“Je tiens à remercier toute l’équipe de la clinique pour leur professionnalisme et leur bienveillance. Dès mon arrivée, j’ai été pris en charge rapidement et accompagné tout au long de mon traitement. Aujourd’hui, je me sens en pleine forme grâce à eux.”</p>
+            <div class="meta">
+              <div class="avatar">MD</div>
+              <div class="person"><span class="name">Mariama D.</span><span class="role">Patiente</span></div>
+            </div>
+          </article>
+
+          <article class="card" aria-label="Témoignage 2">
+            <p class="quote">“Le suivi après mon opération a été exemplaire. Le personnel médical est à l’écoute, disponible et toujours prêt à répondre à mes questions. On se sent vraiment en confiance et soutenu.”</p>
+            <div class="meta">
+              <div class="avatar">OB</div>
+              <div class="person"><span class="name">Ousmane B.</span><span class="role">Patient</span></div>
+            </div>
+          </article>
+
+          <article class="card" aria-label="Témoignage 3">
+            <p class="quote">“Ce qui m’a le plus marqué, c’est l’accueil. Tout le personnel est souriant et attentif, ce qui rend les visites beaucoup plus agréables. Les médecins prennent le temps d’expliquer chaque étape du traitement.”</p>
+            <div class="meta">
+              <div class="avatar">AS</div>
+              <div class="person"><span class="name">Awa S.</span><span class="role">Patiente</span></div>
+            </div>
+          </article>
+
+          <article class="card" aria-label="Témoignage 4">
+            <p class="quote">“J’ai été impressionné par la qualité des soins et la modernité des équipements. Le professionnalisme du personnel m’a rassuré dès le premier jour. Je remercie sincèrement toute l’équipe pour leur aide et leur gentillesse.”</p>
+            <div class="meta">
+              <div class="avatar">CN</div>
+              <div class="person"><span class="name">Cheikh N.</span><span class="role">Patient</span></div>
+            </div>
+          </article>
+
+          <article class="card" aria-label="Témoignage 5">
+            <p class="quote">“Mon fils a été pris en charge avec beaucoup de douceur et de patience. Les médecins ont su nous rassurer et nous expliquer clairement les traitements. Nous sommes très reconnaissants pour l’attention portée à notre enfant.”</p>
+            <div class="meta">
+              <div class="avatar">FK</div>
+              <div class="person"><span class="name">Fatou K.</span><span class="role">Mère d’un patient</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="dots" id="dots" role="tablist" aria-label="Navigation des témoignages"></div>
+    </div>
+  </section>
+
+  <script>
+    (function(){
+      const track = document.getElementById('track');
+      const cards = Array.from(track.children);
+      const next = document.getElementById('nextBtn');
+      const prev = document.getElementById('prevBtn');
+      const dotsWrap = document.getElementById('dots');
+
+      let index = 0;
+      const gap = 18; // must match CSS gap
+
+      // Create dots
+      cards.forEach((c,i)=>{
+        const d = document.createElement('button');
+        d.className='dot';
+        d.setAttribute('aria-label','Aller au témoignage '+(i+1));
+        d.addEventListener('click',()=>{ goTo(i); });
+        dotsWrap.appendChild(d);
+      });
+
+      const dots = Array.from(dotsWrap.children);
+
+      function update(){
+        // calculate offset so active card is visible at left with small breathing room
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const offset = (cardWidth + gap) * index;
+        track.style.transform = `translateX(-${offset}px)`;
+        dots.forEach((d,i)=>d.classList.toggle('active', i===index));
+      }
+
+      function goTo(i){ index = Math.max(0, Math.min(i, cards.length-1)); update(); }
+      next.addEventListener('click',()=> goTo(index+1));
+      prev.addEventListener('click',()=> goTo(index-1));
+
+      // keyboard accessibility
+      document.addEventListener('keydown', e=>{
+        if(e.key === 'ArrowRight') goTo(index+1);
+        if(e.key === 'ArrowLeft') goTo(index-1);
+      });
+
+      // autoplay (soft) — will stop on hover or focus
+      let autoplay = setInterval(()=>{ goTo((index+1) % cards.length); },4500);
+      document.querySelector('.carousel').addEventListener('mouseenter', ()=> clearInterval(autoplay));
+      document.querySelector('.carousel').addEventListener('mouseleave', ()=>{ autoplay = setInterval(()=>{ goTo((index+1) % cards.length); },4500); });
+
+      // initial render
+      goTo(0);
+
+      // responsive: ensure index not out of range if cards shrink
+      window.addEventListener('resize', ()=>{ index = Math.min(index, cards.length-1); update(); });
+    })()
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.jumbo{
+    background-image: url("../images/images/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    color: black;
+    
+}
+.jumbo img{
+    width: 100%;
+    height: auto;
+   
+    
+}
+.jumbo .jumbo-content{
+    position: relative;
+
+
+}
+.jumbo .jumbo-content .Title{
+    margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+.jumbo .jumbo-content .Bouttton .boutton1 .boutton2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: flex-end;
+    
+    
+}
+.Bouttton{
+    display: flex;
+    gap: 50px;
+}
+
+.Bouttton  .boutton2 a{
+    background-color: white;
+    color: blue;
+}
+
+.Bouttton a{
+    padding:16px 24px;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+

@@ -1,0 +1,15 @@
+.header{
+   background-color:black;
+   padding: 0 8px;
+   margin: 0;
+   width: 1440;
+   height: 100;
+   
+}
+
+.container-navbar-brand{
+    width: 301;
+    height: 63;
+    top: 19px;
+    left: 135px;
+}

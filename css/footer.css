@@ -1,0 +1,117 @@
+
+.footer{
+    background-color: rgb(10, 10, 17);
+    padding-top:80px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+}
+
+.footer-content ul li {
+    list-style: none;
+    margin-bottom: 20px;
+
+}
+.m-footer li p{
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: rgba(129, 129, 129, 1);
+
+
+}
+.m-footer li img{
+    width: 237;
+    height: 127;
+    top: 5368px;
+    left: 131px;
+
+}
+.footer-k li{
+    width: 157;
+    height: 63;
+    opacity: 1;
+    top: 5368px;
+    left: 535px;
+    gap: 15px;
+
+}
+.footer-k li span{
+    font-family: Asap;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(144, 144, 144, 1);
+
+}
+.footer-k li svg path{
+    width: 24;
+    height: 24;
+}
+
+.footer-pour li{
+    width: 84;
+    height: 229;
+    top: 5368px;
+    left: 935px;
+    gap: 36px;
+    font-family: Asap;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(144, 144, 144, 1);
+}
+.footer-icons li{
+    width: 92;
+    top: 5368px;
+    left: 1213px;
+    height: 260;
+    top: 5368px;
+    left: 1213px;
+    gap: 35px;
+
+}
+.footer-icons li span{
+   font-family: Asap;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: rgba(144, 144, 144, 1);
+
+
+}
+.text{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    align-items: center;
+    border: 2px;
+    border-radius: 4px;
+    background:rgba(14, 14, 14, 1);
+    color: rgba(113, 113, 113, 1);
+    width: 1440;
+    height: 93;
+    top: 5668px;
+    padding: 34px 34px;
+}
+.footer {
+    background-color: rgb(42, 42, 59);
+}
