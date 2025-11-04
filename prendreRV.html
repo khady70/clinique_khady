@@ -1,0 +1,52 @@
+<?php require_once '../config.php';
+require_role('patient');
+$user = $_SESSION['user'];
+
+// lister medecins disponibles
+$stmt = $pdo->query('SELECT id, nom, prenom, specialite FROM medecins');
+$medecins = $stmt->fetchAll();
+$errors = [];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $medecin_id = intval($_POST['medecin_id']);
+    $date_heure = $_POST['date_heure'];
+    // validation minimale
+    if (!$medecin_id || !$date_heure) $errors[] = 'Tous les champs sont obligatoires.';
+    else {
+        // vérifier conflit: même medecin, même date_heure
+        $stmt = $pdo->prepare('SELECT COUNT(*) FROM rendezvous WHERE medecin_id = ? AND date_heure = ?');
+        $stmt->execute([$medecin_id, $date_heure]);
+        if ($stmt->fetchColumn() > 0) $errors[] = 'Créneau déjà pris.';
+        else {
+            $stmt = $pdo->prepare('INSERT INTO rendezvous (patient_id, medecin_id, date_heure) VALUES (?,?,?)');
+            $stmt->execute([$user['profile']['id'],$medecin_id,$date_heure]);
+            header('Location: dashboard.php'); exit;
+        }
+    }
+}
+?>
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prendre RDV</title>
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body>
+  <main class="card">
+    <h1>Prendre un rendez-vous</h1>
+    <?php if ($errors): ?><div class="errors"><?php echo implode('<br>', $errors); ?></div><?php endif; ?>
+    <form method="post" action="prendre_rdv.php">
+      <label>Médecin
+        <select name="medecin_id" required>
+          <option value="">-- Choisir --</option>
+          <option value="">Dr Ndiaye</option>
+          <option value="">Dr Gueye</option>
+          <option value="">Fall</option>
+          <?php foreach($medecins as $m): ?>
+            <option value="<?php echo $m['id']; ?>"><?php echo htmlspecialchars($m['prenom'].' '.$m['nom'].' — '.$m['specialite']); ?></option>
+          <?php endforeach; ?>
+        </select>
+      </label>
+      <label>Date et heure <input type="datetime-local" name="date_heure" required></label>
+      <button>Valider</button>
+    </form>
+  </main>
+</body>
+</html>

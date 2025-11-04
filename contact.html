@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Clinique SantéPlus</title>
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Clinique SantéPlus</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a_propos.html">À propos</a></li>
+        <li><a href="services.html">Nos Services</a></li>
+        <li><a href="equipe.html">Équipe Médicale</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Contactez-nous</h2>
+    <p>Besoin d’un rendez-vous ou d’une information ? Nous sommes à votre écoute.</p>
+  </section>
+
+  <section class="contact-container">
+    <div class="formulaire">
+      <h3>Envoyez-nous un message</h3>
+      <form action="#" method="POST">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+        <label for="sujet">Sujet</label>
+        <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre message">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <div class="infos">
+      <h3>Nos coordonnées</h3>
+      <div class="info-item">
+        <img src="https://img.icons8.com/fluency/48/000000/address.png" alt="Adresse">
+        <p>123 Avenue de la Santé, Dakar, Sénégal</p>
+      </div>
+      <div class="info-item">
+        <img src="https://img.icons8.com/fluency/48/000000/phone.png" alt="Téléphone">
+        <p>+221 77 123 45 67</p>
+      </div>
+      <div class="info-item">
+        <img src="https://img.icons8.com/fluency/48/000000/new-post.png" alt="Email">
+        <p>contact@santeplus.sn</p>
+      </div>
+      <img class="contact-image" src="https://img.freepik.com/photos-gratuite/medecins-analysons-resultats-patient_23-2149370335.jpg" alt="Clinique SantéPlus">
+    </div>
+  </section>
+
+  <section class="map">
+    <h3>Où nous trouver</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.326693783217!2d-17.45873262498947!3d14.692778374703062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10b7a7a7c85a7%3A0xd637f2f92bde05b3!2sDakar!5e0!3m2!1sfr!2ssn!4v1693940093879!5m2!1sfr!2ssn" 
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Clinique SantéPlus. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

@@ -5,17 +5,33 @@
 }
 
 .section-white{
-    background-color: rgb(175, 169, 169);
+    background-color:#06215f;
     
 }
 .titre-section{
-     font-family: "Asap", sans-serif;
+    font-family: "Asap", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: Bold;
     font-size: 32px;
     font-weight: 700px;
     text-align: center;
+    color:#202020;
+}
+.Titre-section{
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    font-weight: 700px;
+    text-align: center;
+    color:#F9F9F9;
+
+}
+
+.titre-section p{
+    color:#D9D9D9 ;
 }
 
 .services{
@@ -42,7 +58,7 @@
 .section-light{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color:rgb(124, 175, 173);
+    background-color:#FCFCFC;
     display: block;
     text-align: center;
     align-items: center;
@@ -50,7 +66,7 @@
 
 }
 .setion-blue{
-    background-color: rgb(75, 182, 231);
+    background-color:#1b25bb;
 }
 
 .blue-slider{
@@ -76,6 +92,12 @@
     border: 1px solid #BBBB;
     border-radius: 8px;
     display: inline-block;
+}
+
+.Section-dark-iem a{
+    padding: 16px 16px;
+    background-color: white;
+
 }
 
 .slider-item {
@@ -129,14 +151,20 @@
 }
 
 .Bio-enfant a{
-    padding-left: 200px;
+    /*padding-left: 200px;
     padding-bottom: 50px;
     padding-right: 200px;
     padding-top: 50px;
     align-items: first baseline;
     background-position: left;
     width: 50%;
-    height: 50vh;
+    height: 50vh;*/
+    padding: 16px 16px ;
+    background-color: #29219c;
+    align-items: center;
+    text-decoration: none;
+    color: #FBFDFC;
+    
 }
 .titre-Bio{
   font-family: "Asap", sans-serif;
@@ -147,7 +175,7 @@
     "wdth" 100;
   
 }
-.Bio-enfant p{
+.Bio-enfant {
   font-family: "Asap", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -166,6 +194,12 @@
     "wdth" 100;
 }
 .Bio{
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: Bold;
+    font-variation-settings:
+    "wdth" 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +258,7 @@
     color: black;
 }
 .setion-dark{
-    background-color: black;
+    background-color:#0b2e80 ;
    
 }
 .Section-dark-iem a{

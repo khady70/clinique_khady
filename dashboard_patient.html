@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord - Espace Patient</title>
+  <link rel="stylesheet" href="css/dashboard_patient.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Clinique SantéPlus</h2>
+    <ul>
+      <li class="active"><a href="#">🏠 Tableau de bord</a></li>
+      <li><a href="#">📅 Mes rendez-vous</a></li>
+      <li><a href="#">💊 Mes ordonnances</a></li>
+      <li><a href="#">👩‍⚕️ Mes médecins</a></li>
+      <li><a href="#">⚙️ Paramètres</a></li>
+      <li><a href="#">🚪 Déconnexion</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h2>Bienvenue, <span>Fatou Ndiaye</span></h2>
+      <p>Dernière connexion : 03 Novembre 2025</p>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/treatment-plan.png" alt="Rendez-vous">
+        <h3>Rendez-vous à venir</h3>
+        <p>2 consultations prévues cette semaine</p>
+      </div>
+
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/doctor-female.png" alt="Médecins">
+        <h3>Mes médecins</h3>
+        <p>Suivi par 3 spécialistes</p>
+      </div>
+
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/prescription.png" alt="Ordonnance">
+        <h3>Ordonnances</h3>
+        <p>5 ordonnances disponibles</p>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="rendez-vous">
+        <h3>📅 Prochains rendez-vous</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Heure</th>
+              <th>Médecin</th>
+              <th>Spécialité</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>06/11/2025</td>
+              <td>10:00</td>
+              <td>Dr. Aïssatou Diouf</td>
+              <td>Pédiatrie</td>
+              <td><span class="statut confirme">Confirmé</span></td>
+            </tr>
+            <tr>
+              <td>09/11/2025</td>
+              <td>14:30</td>
+              <td>Dr. Abdou Faye</td>
+              <td>Radiologie</td>
+              <td><span class="statut en-attente">En attente</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="profil">
+        <h3>👤 Mon profil</h3>
+        <img src="https://img.freepik.com/photos-gratuite/portrait-femme-africaine-souriante-hopital_23-2149410973.jpg" alt="Photo du patient">
+        <p><strong>Nom :</strong> Fatou Ndiaye</p>
+        <p><strong>Email :</strong> fatou.ndiaye@example.com</p>
+        <p><strong>Téléphone :</strong> +221 77 456 78 90</p>
+        <p><strong>Groupe sanguin :</strong> O+</p>
+      </div>
+      <script src="javascript/dashboard.js"></script>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  background: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header a.active,
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  background: url("https://img.freepik.com/photos-gratuite/interieur-clinique-moderne_23-2149370318.jpg") no-repeat center/cover;
+  color: white;
+  padding: 100px 20px;
+  background-attachment: fixed;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* CONTACT SECTION */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 10%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.formulaire {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.formulaire h3 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 20px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #005f8d;
+}
+
+/* INFOS */
+.infos {
+  flex: 1;
+  background: #e3f2fd;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.infos h3 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.info-item img {
+  width: 30px;
+}
+
+.contact-image {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* MAP */
+.map {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.map h3 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

@@ -16,8 +16,16 @@ body{margin:0;background:linear-gradient(180deg,var(--bg),#eef4fb);color:#111827
     background-color: blue;
 }
 .TITLEH2{
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    font-weight: 700px;
     text-align: center;
-    color:#f6f8fb; 
+    text-align: center;
+    color:#F9F9F9; 
+    
 }
 
 

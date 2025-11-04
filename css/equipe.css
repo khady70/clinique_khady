@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.header {
+  background: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header a.active,
+.header a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  background: url("https://img.freepik.com/photos-gratuite/equipe-medicale-hopital_23-2149363874.jpg") no-repeat center/cover;
+  color: white;
+  padding: 100px 20px;
+  background-attachment: fixed;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+}
+
+.medecin {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.medecin:hover {
+  transform: translateY(-10px);
+}
+
+.medecin img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.medecin h3 {
+  color: #0077b6;
+  margin: 15px 0 5px;
+}
+
+.medecin .specialite {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.medecin p {
+  padding: 0 15px;
+  font-size: 15px;
+  color: #666;
+}
+
+.footer {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voir Plus - Clinique SantéPlus</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url('assets/images/clinique-banner.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .about, .services, .equipments, .values {
+      margin-bottom: 80px;
+    }
+
+    .about img, .equipments img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .values ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .values li {
+      background: white;
+      border-left: 5px solid #009688;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: #009688;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 500;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>À propos de la Clinique SantéPlus</h1>
+    <p>Découvrez nos services, notre équipe et nos engagements envers votre santé</p>
+  </header>
+
+  <section class="about">
+    <h2>Notre Histoire</h2>
+    <p>
+      Fondée il y a plus de 20 ans, la Clinique SantéPlus s’est donnée pour mission de fournir des soins de santé
+      modernes, humains et accessibles à tous. Grâce à une équipe médicale hautement qualifiée et un plateau technique
+      de dernière génération, nous plaçons le bien-être de nos patients au cœur de nos priorités.
+    </p>
+    <img src="assets/images/clinique-interieur.jpg" alt="Intérieur de la clinique">
+  </section>
+
+  <section class="services">
+    <h2>Nos Services Médicaux</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="https://img.icons8.com/color/96/000000/ophthalmology.png" alt="Ophtalmologie">
+        <h3>Ophtalmologie</h3>
+        <p>Soins complets pour la santé visuelle, de la consultation à la chirurgie laser.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://img.icons8.com/color/96/000000/heart-with-pulse.png" alt="Cardiologie">
+        <h3>Cardiologie</h3>
+        <p>Diagnostic et traitement des maladies cardiovasculaires avec des équipements modernes.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://img.icons8.com/color/96/000000/pregnant.png" alt="Gynécologie">
+        <h3>Gynécologie</h3>
+        <p>Suivi complet pour femmes, maternité et santé reproductive.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://img.icons8.com/color/96/000000/dental-braces.png" alt="Dentisterie">
+        <h3>Dentisterie</h3>
+        <p>Soins dentaires, implants et blanchiment professionnel pour un sourire parfait.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="equipments">
+    <h2>Nos Équipements</h2>
+    <p>
+      La clinique dispose d’équipements à la pointe de la technologie, tels que des scanners 3D, des laboratoires
+      d’analyse modernes et des salles d’opération entièrement numérisées pour garantir des soins rapides et précis.
+    </p>
+    <img src="assets/images/equipements.jpg" alt="Équipements médicaux modernes">
+  </section>
+
+  <section class="values">
+    <h2>Nos Valeurs</h2>
+    <ul>
+      <li>❤️ Compassion et écoute du patient</li>
+      <li>⚕️ Excellence médicale et innovation</li>
+      <li>🌍 Accessibilité et respect de la diversité</li>
+      <li>🤝 Confiance et transparence dans nos soins</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Clinique SantéPlus — <a href="index.html">Retour à l'accueil</a></p>
+  </footer>
+
+</body>
+</html>

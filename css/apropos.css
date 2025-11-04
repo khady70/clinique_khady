@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  background: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url("https://img.freepik.com/photos-gratuite/interieur-clinique-moderne_23-2149370318.jpg") no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.apropos, .histoire {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 60px 10%;
+  background: white;
+  margin-top: 30px;
+}
+
+.apropos:nth-child(even), .histoire:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.apropos img, .histoire img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.content {
+  flex: 1;
+}
+
+.content h2 {
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.valeurs {
+  text-align: center;
+  padding: 60px 10%;
+  background: #e3f2fd;
+}
+
+.valeurs-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.valeur {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+}
+
+.valeur img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.valeur h3 {
+  margin: 15px 0 10px;
+  color: #0077b6;
+}
+
+.footer {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .apropos, .histoire {
+    flex-direction: column;
+  }
+}
